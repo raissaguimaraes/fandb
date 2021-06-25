@@ -13,8 +13,8 @@ const Footer = () => {
         <div class="container text-center">
           <div class="row justify-content-center">
             <div class="col-md-7">
-              <h1 class="font-weight-light mt-4 text-white">FanDB</h1>
-              <p class="lead text-white-50">Explore informações sobre seus personagens e episodios favoritos aqui na FanDB!</p>
+              <h1 class="font-weight-dark mt-4">FanDB</h1>
+              <p class="lead text">Explore informações sobre seus personagens e episodios favoritos aqui na FanDB!</p>
             </div>
           </div>
         </div>

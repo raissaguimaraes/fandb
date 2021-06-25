@@ -65,7 +65,7 @@ main {
 
 .bodyContainer {
   display: inside;
-  flex-direction: row;
+  flex-direction: column;
 
   grid-template-columns: 1fr 1fr 1fr; /* fraction*/
 }

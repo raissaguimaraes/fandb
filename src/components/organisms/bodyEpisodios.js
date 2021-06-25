@@ -1,13 +1,13 @@
 import React from 'react';
-import { Container, Row, Col} from 'react-bootstrap';
+import { Container } from 'react-bootstrap';
 import './body.css';
 
 const BodyEpisodios = () => {
   return (
     <Container>
-    <div class="col-md-8">
+    <div class="col-md-5">
       <div class="card mb-3">
-        <div class="card-body">
+        <div class="card-body-episodios">
           <div class="row">
             <div class="col-sm-3">
               <h6 class="mb-0">Full Name</h6>
