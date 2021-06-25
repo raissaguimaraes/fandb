@@ -1,6 +1,10 @@
 import React from 'react';
 import { Navbar, Nav, Container} from 'react-bootstrap';
+import { NavLink } from 'react-router-dom';
+import BodyEpisodios from './bodyEpisodios';
+import BodyPersonagens from './bodyPersonagens';
 import '../../App.scss';
+import '../../App.css';
 
 const Header = () => {
 
@@ -8,7 +12,12 @@ const Header = () => {
        
     <Navbar bg="light" expand="lg" static="top" classname="mb-5 shadow">
         <Container>
-            <Navbar.Brand href="/home" >FanDB</Navbar.Brand>
+            
+            <Navbar.Brand> 
+            <NavLink to="/Home"/>
+                FanDB
+            </Navbar.Brand>
+
             <Navbar.Toggle data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation" />
             <Navbar.Collapse classname="navbar-collapse" id="navbarResponsive">
                 <Nav
@@ -17,9 +26,9 @@ const Header = () => {
                 navbarScroll
                 >
                 <ul class="navbar-nav ml-auto"></ul>
-                    <Nav.Link classname="nav-item active" href="/home">Home</Nav.Link>
-                    <Nav.Link classname="nav-item" href="/personagens">Personagens</Nav.Link>
-                    <Nav.Link classname="nav-item" href="/episodios">Episodios</Nav.Link>
+                    <NavLink to="/Home" classname="nav-item active">Home</NavLink>
+                    <NavLink to="/Home" classname="nav-item">Personagens</NavLink>
+                    <NavLink to="/Home"  classname="nav-item">Episodios</NavLink>
                 </Nav>
                 
             </Navbar.Collapse>

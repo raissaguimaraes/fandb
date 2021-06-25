@@ -1,28 +1,31 @@
 import React from 'react';
-import { Navbar, Nav, Container} from 'react-bootstrap';
+import { Container } from 'react-bootstrap';
 import '../../App.scss';
+import '../../App.css';
 
 //import { Container, Row, Col} from 'react-bootstrap/';
 
 const Footer = () => {
   return (
-    <Navbar bg="light" expand="lg" static="top" classname="mb-5 shadow">
-        <Container>
-            <Navbar.Brand href="/home" >FanDB</Navbar.Brand>
-            <Navbar.Toggle data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation" />
-            <Navbar.Collapse classname="navbar-collapse" id="navbarResponsive">
-                <Nav
-                className="mr-auto my-2 my-lg-0"
-                style={{ maxHeight: '100px' }}
-                navbarScroll
-                >
-                <ul class="navbar-nav ml-auto"></ul>
-            
-                </Nav>
-                
-            </Navbar.Collapse>
-        </Container>
-    </Navbar>
+    <Container>
+    <body class="d-flex flex-column">
+      <div id="page-content">
+        <div class="container text-center">
+          <div class="row justify-content-center">
+            <div class="col-md-7">
+              <h1 class="font-weight-light mt-4 text-white">FanDB</h1>
+              <p class="lead text-white-50">Explore informações sobre seus personagens e episodios favoritos aqui na FanDB!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer id="sticky-footer" class="py-4 bg-dark text-white-50">
+        <div class="container text-center">
+          <small>Copyright &copy; FanDB</small>
+        </div>
+      </footer>
+    </body>
+    </Container>
   );
 }
 

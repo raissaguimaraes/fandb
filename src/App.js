@@ -1,27 +1,26 @@
 import React, { Component } from 'react';
+import Home from './pages/home';
+
 import {
+  BrowserRouter as Router,
+  Switch,
   Route,
-  HashRouter,
   Redirect
 } from "react-router-dom";
-import Home from './pages/home';
-/*import Episodios from './pages/episodios.js';
-import Personagens from './pages/personagens.jsx';*/
+
 
 class App extends Component {
   render () {
     return (
-      <HashRouter>
-          <Route exact="/">
-            <Redirect to="home" />
-          </Route>
+      <> 
+      <Router>
+        <Switch>
           <Route path="/home" component={Home} />
-        </HashRouter>
+        </Switch>
+      </Router>
+      </>
     );
   }
 }
 
 export default App;
-/*<Route path="/episodios" component={Episodios} />
-          <Route path="/personagens" component={Personagens} />
-          <Route component={Home} />*/
